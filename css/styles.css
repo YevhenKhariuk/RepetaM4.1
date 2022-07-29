@@ -1,0 +1,287 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  height: 190px;
+  width: calc(50% - 20px);
+  margin: 10px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.box:nth-child(1) {
+  background-color: #2196f3;
+  background-image: url("../img/cat.png");
+  background-repeat: no-repeat;
+}
+
+.box:nth-child(2) {
+  background-color: #9c27b0;
+  background-image: url(../img/bird.png);
+  background-repeat: repeat-x;
+}
+
+.box:nth-child(3) {
+  background-color: #009688;
+  background-image: url(../img/dog.png);
+  background-repeat: repeat-y;
+}
+
+.box:nth-child(4) {
+  background-color: #3f51b5;
+  background-image: url(../img/turtle.png);
+  /*background-repeat: repeat; стоїть за замовчуванням */
+}
+
+.box:nth-child(5) {
+  background-color: #2196f3;
+  background-image: url(../img/cat.png);
+  background-repeat: no-repeat;
+  background-position: 38px 38px;
+}
+
+.box:nth-child(6) {
+  background-color: #9c27b0;
+  background-image: url(../img/bird.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50% /*center*/;
+}
+
+.box:nth-child(7) {
+  background-color: #009688;
+  background-image: url(../img/dog.png);
+  background-repeat: no-repeat;
+  background-position: bottom 38px right 38px;
+}
+
+.box:nth-child(8) {
+  background-color: #3f51b5;
+  background-image: url(../img/turtle.png);
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+.box:nth-child(9) {
+  background-color: #2196f3;
+  background-image: url(../img/cat.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% 50%;
+}
+
+.box:nth-child(10) {
+  background-color: #9c27b0;
+  background-image: url(../img/cat.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 70%;
+}
+
+.box:nth-child(11) {
+  background-color: #009688;
+  background-image: url(../img/cat.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+.box:nth-child(12) {
+  background-color: #3f51b5;
+  background-image: url(../img/cat.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px 150px;
+}
+
+.box:nth-child(13) {
+  background-color: #2196f3;
+  background-image: url(../img/cat.png);
+  background-repeat: repeat-x;
+  background-position: top;
+  background-size: 25px;
+}
+
+.box:nth-child(14) {
+  background-color: #9c27b0;
+  background-image: url(../img/cat.png);
+  background-position: top /*bottom center*/;
+  background-size: cover;
+}
+
+.box:nth-child(15) {
+  background-color: #009688;
+  background-image: url(../img/cat.png);
+  background-repeat: no-repeat;
+  background-position: right /*top bottom center*/;
+  background-size: contain;
+}
+
+.box:nth-child(16) {
+  background-color: #3f51b5;
+}
+
+.box:nth-child(17) {
+  background-color: #2196f3;
+}
+
+.box:nth-child(18) {
+  background-color: #9c27b0;
+}
+
+.box:nth-child(19) {
+  background-color: #009688;
+}
+
+.box:nth-child(20) {
+  background-color: #3f51b5;
+}
+
+.overlay {
+  height: 480px;
+  min-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url(../img/ocean-fish.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  height: 600px;
+  min-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/img-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*кнопка*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: purple;
+}
+
+/*Через span html*/
+.button > .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(../img/envelope.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/*через псевдо елемент*/
+.button-psevdoel {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.button-psevdoel:hover,
+.button-psevdoel:focus {
+  background-color: purple;
+}
+
+.button-psevdoel::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: red;
+  background-image: url(../img/envelope.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/*Карточка*/
+.list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.list-item:nth-child(1)::before {
+  background-image: url(../img/antenna.svg);
+}
+
+.list-item:nth-child(2)::before {
+  background-image: url(../img/astronaut.svg);
+}
+
+.list-item:nth-child(3)::before {
+  background-image: url(../img/clock.svg);
+}
+
+.icon-delivery::before {
+  background-image: url(../img/diagram.svg);
+}
+
+/*Соцмережа*/
+.link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../img/tvitter.svg);
+  background-color: #2196f3;
+  background-size: 20px 16.25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+}
