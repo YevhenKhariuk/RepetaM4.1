@@ -159,6 +159,40 @@
   background-position: center;
 }
 
+.overlay-danilko {
+  height: 480px;
+  min-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.7) 0 20%,
+      rgba(0, 0, 255, 0.7) 80% 100%
+    ),
+    url(../img/ocean-fish.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay-danilko-two {
+  height: 480px;
+  min-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid black;
+  background-image: radial-gradient(
+      circle at top,
+      rgba(255, 0, 0, 0.7) 0 20%,
+      rgba(0, 0, 255, 0.7) 80% 100%
+    ),
+    url(../img/ocean-fish.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero {
   height: 600px;
   min-width: 1600px;
